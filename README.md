@@ -1,7 +1,7 @@
 ### Compare db tables Shopify and Magento2
 1. PRODUCTS:
-#### Shopify:
-Trên Shopify Thông tin sản phẩm được lưu trữ chủ yếu trong bảng products và variants.
+### Shopify:
+Ở Shopify Thông tin sản phẩm được lưu trữ chủ yếu trong bảng products và variants.
 - Bảng products: id, title (Name), body_html (Full Description), published_at (Status), handle (URL), meta_title, meta_description, tags (Product Tags).
 - Bảng variants: id, product_id, sku (SKU), weight (Weight), option1, option2, option3 (Attributes), inventory_quantity (Quantity), price (Price), compare_at_price (Special Price).
 - Về MANUFACTURERS: Shopify không có bảng dữ liệu riêng biệt, nhưng có thể sử dụng Product Tags hoặc Product Metafields.
@@ -57,6 +57,7 @@ Magento 2 không có chức năng Product Tags mặc định. Tuy nhiên, có th
  - Magento 2 lưu trữ thông tin về thuế trong bảng tax_calculation_rate và tax_calculation_rule.
  - Bảng tax_calculation_rate gồm các trường: tax_calculation_rate_id, tax_country_id (Country), tax_region_id, tax_postcode, code (Name), rate (Percent).
  - Bảng tax_calculation_rule gồm các trường: tax_calculation_rule_id, code (Name), tax_calculation_rate_id (Tax Rate), customer_tax_class_id (Tax Class).
+
 
 ### To create a custom attribute in Magento 2, follow these steps:
 
