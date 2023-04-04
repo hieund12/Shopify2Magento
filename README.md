@@ -89,5 +89,7 @@ Magento 2 không có chức năng Product Tags mặc định. Tuy nhiên, có th
 - Used in Product Listing: Set to "Yes" if you want the attribute to be used in product listings.
 - Used for Sorting in Product Listing: Set to "Yes" if you want the attribute to be used for sorting in product listings.
 9. Click "Save Attribute" in the top right corner to create the custom attribute.
+```
 After creating the custom attribute, you can use it in your product import process. Make sure to include the attribute code in your Magento 2 CSV file for a successful import.
+```
 
