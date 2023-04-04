@@ -48,7 +48,7 @@ Magento 2 không có chức năng Product Tags mặc định. Tuy nhiên, có th
 #### Magento 2:
  - Magento 2 sử dụng bảng eav_attribute để lưu trữ thông tin về nhà sản xuất. Trường liên quan: attribute_id, entity_type_id, attribute_code (Name).
 
-##.	TAXES:
+##	TAXES:
 #### Shopify:
  - Shopify lưu trữ thông tin về thuế trong bảng tax_rates và tax_rules.
  - Bảng tax_rates gồm các trường: id, country_code (Country), percentage (Percent).
