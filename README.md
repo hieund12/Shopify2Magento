@@ -1,5 +1,5 @@
-### Compare db tables Shopify and Magento2
-1. PRODUCTS:
+# Compare db tables Shopify and Magento2
+## PRODUCTS:
 ### Shopify:
 Ở Shopify Thông tin sản phẩm được lưu trữ chủ yếu trong bảng products và variants.
 - Bảng products: id, title (Name), body_html (Full Description), published_at (Status), handle (URL), meta_title, meta_description, tags (Product Tags).
@@ -33,7 +33,7 @@ Magento 2 không có chức năng Product Tags mặc định. Tuy nhiên, có th
 4. Thông tin về Quantity, Stock Availability, Manage Stock:
 - cataloginventory_stock_item: item_id, product_id, stock_id, qty (Quantity), min_qty, use_config_min_qty, is_qty_decimal, backorders, use_config_backorders, min_sale_qty, use_config_min_sale_qty, max_sale_qty, use_config_max_sale_qty, is_in_stock (Stock Availability), low_stock_date, notify_stock_qty, use_config_notify_stock_qty, manage_stock (Manage Stock), stock_status_changed_auto, use_config_qty_increments, qty_increments, use_config_enable_qty_inc, enable_qty_increments, is_decimal_divided, website_id
 
-2.	PRODUCT CATEGORIES:
+##	PRODUCT CATEGORIES:
 #### Shopify:
  - Shopify sử dụng một cấu trúc dữ liệu đơn giản hơn cho các danh mục sản phẩm, thường được gọi là Collections. Các thông tin chính được lưu trữ trong bảng collections.
  - Các trường liên quan trong bảng collections gồm: id, title (Name), body_html (Description), published_at (Status), image, handle (URL), meta_title, meta_description.
@@ -42,13 +42,13 @@ Magento 2 không có chức năng Product Tags mặc định. Tuy nhiên, có th
  - Các trường liên quan trong bảng catalog_category_entity gồm: entity_id, parent_id, path, position, level, children_count.
  - Các trường liên quan trong bảng catalog_category_entity_varchar gồm: entity_id, attribute_id, store_id, value (Name, Description, Meta Title, Meta Description).
 
-3.	MANUFACTURERS:
+##	MANUFACTURERS:
 #### Shopify:
  - Shopify không có một bảng dữ liệu riêng biệt cho nhà sản xuất. Tuy nhiên, bạn có thể sử dụng tính năng Product Tags hoặc Product Metafields để lưu trữ thông tin về nhà sản xuất.
 #### Magento 2:
  - Magento 2 sử dụng bảng eav_attribute để lưu trữ thông tin về nhà sản xuất. Trường liên quan: attribute_id, entity_type_id, attribute_code (Name).
 
-4.	TAXES:
+##.	TAXES:
 #### Shopify:
  - Shopify lưu trữ thông tin về thuế trong bảng tax_rates và tax_rules.
  - Bảng tax_rates gồm các trường: id, country_code (Country), percentage (Percent).
