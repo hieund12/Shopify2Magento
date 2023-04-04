@@ -23,7 +23,7 @@
 - catalog_product_entity_decimal: entity_id, attribute_id, store_id, value (Price, Special Price, Weight)
 - catalog_product_entity_media_gallery: value_id, attribute_id, entity_id, value (Base Image, Additional Images)
 2. Thông tin về Product Tags:
-Magento 2 không có chức năng Product Tags mặc định. Tuy nhiên, có thể sử dụng các extension của bên thứ ba hoặc tạo một thuộc tính sản phẩm tùy chỉnh để quản lý Product Tags.
+Magento 2 không có chức năng Product Tags mặc định. Tuy nhiên, có thể sử dụng các extension của bên thứ ba hoặc tạo một [custom attribute](https://github.com/hieund12/magento2/blob/main/README.md#to-create-a-custom-attribute-in-magento-2-follow-these-steps) để quản lý Product Tags.
 
 3. Thông tin về Variants (còn gọi là Configurable Products):
 - catalog_product_super_attribute: product_super_attribute_id, product_id, attribute_id, position
