@@ -92,3 +92,35 @@ Magento 2 không có chức năng Product Tags mặc định. Tuy nhiên, có th
 
 > After creating the custom attribute, you can use it in your product import process. Make sure to include the attribute code in your Magento 2 CSV file for a successful import.
 
+
+## Variant fields in magento 2
+In Magento 2, product variants are usually managed using Configurable Products. Configurable products have multiple associated Simple Products, which represent the different variants based on specific attributes like size, color, etc. Here's a list of the fields relevant to variants in Magento 2:
+
+1. Product SKU: A unique identifier for each product variant. Each associated Simple Product will have its own SKU.
+
+2. Attribute Set: The set of attributes used to describe the product variants. For example, a clothing product may have attributes like size and color.
+
+3. Attribute Code: The unique code for each attribute used in the configurable product.
+
+4. Attribute Value: The value of the attribute for a specific product variant. For example, the size attribute may have values like Small, Medium, or Large.
+
+5. Price: The price of each product variant. Prices can be set individually for each associated Simple Product.
+
+6. Special Price: A discounted price for the product variant, if applicable. This field is optional.
+
+7. Cost: The cost of goods for each product variant. This field is optional and used for calculating profit margins.
+
+8. Weight: The weight of each product variant. This information is used for shipping calculations.
+
+9. Quantity: The stock quantity for each product variant. This information is used for inventory management.
+
+10. Stock Status: The stock availability status for each product variant (In Stock or Out of Stock).
+
+11. Visibility: The visibility settings for each product variant in the catalog and search results. Simple products associated with configurable products are usually set to "Not Visible Individually."
+
+12. Tax Class: The tax class for each product variant. This information is used for tax calculations.
+
+13. Images: Product images for each variant. You can set different images for each associated Simple Product to showcase the specific variant.
+
+These fields are associated with Simple Products that are linked to a Configurable Product, representing the different variants of the product. When importing or managing product variants in Magento 2, you will need to work with these fields to create and update the required product data.
+
