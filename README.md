@@ -124,3 +124,21 @@ In Magento 2, product variants are usually managed using Configurable Products. 
 
 These fields are associated with Simple Products that are linked to a Configurable Product, representing the different variants of the product. When importing or managing product variants in Magento 2, you will need to work with these fields to create and update the required product data.
 
+
+### How to create attribute (for import)
+You need to create the "color" attribute and add it to the attribute set in Magento 2 before importing the products. Please follow these steps:
+
+1. Log in to your Magento 2 admin panel.
+2. Go to Stores > Attributes > Product.
+3. Click "Add New Attribute" button.
+4. Fill in the required fields:
+- Attribute Code: color (use lowercase)
+- Default Label: Color
+- Catalog Input Type for Store Owner: Dropdown
+- Values Required: Yes (if you want the color to be required for all products)
+5. Click "Save Attribute" to create the attribute.
+6. Go to Stores > Attributes > Attribute Set.
+7. Select the "Default" attribute set (or the attribute set you're using for your products).
+8. Drag the newly created "Color" attribute from the "Unassigned Attributes" column to the "Groups" column under an appropriate group (e.g., Product Details).
+9. Click "Save" to update the attribute set.
+
