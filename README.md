@@ -97,29 +97,17 @@ Magento 2 không có chức năng Product Tags mặc định. Tuy nhiên, có th
 In Magento 2, product variants are usually managed using Configurable Products. Configurable products have multiple associated Simple Products, which represent the different variants based on specific attributes like size, color, etc. Here's a list of the fields relevant to variants in Magento 2:
 
 1. Product SKU: A unique identifier for each product variant. Each associated Simple Product will have its own SKU.
-
 2. Attribute Set: The set of attributes used to describe the product variants. For example, a clothing product may have attributes like size and color.
-
 3. Attribute Code: The unique code for each attribute used in the configurable product.
-
 4. Attribute Value: The value of the attribute for a specific product variant. For example, the size attribute may have values like Small, Medium, or Large.
-
 5. Price: The price of each product variant. Prices can be set individually for each associated Simple Product.
-
 6. Special Price: A discounted price for the product variant, if applicable. This field is optional.
-
 7. Cost: The cost of goods for each product variant. This field is optional and used for calculating profit margins.
-
 8. Weight: The weight of each product variant. This information is used for shipping calculations.
-
 9. Quantity: The stock quantity for each product variant. This information is used for inventory management.
-
 10. Stock Status: The stock availability status for each product variant (In Stock or Out of Stock).
-
 11. Visibility: The visibility settings for each product variant in the catalog and search results. Simple products associated with configurable products are usually set to "Not Visible Individually."
-
 12. Tax Class: The tax class for each product variant. This information is used for tax calculations.
-
 13. Images: Product images for each variant. You can set different images for each associated Simple Product to showcase the specific variant.
 
 These fields are associated with Simple Products that are linked to a Configurable Product, representing the different variants of the product. When importing or managing product variants in Magento 2, you will need to work with these fields to create and update the required product data.
@@ -141,4 +129,28 @@ You need to create the "color" attribute and add it to the attribute set in Mage
 7. Select the "Default" attribute set (or the attribute set you're using for your products).
 8. Drag the newly created "Color" attribute from the "Unassigned Attributes" column to the "Groups" column under an appropriate group (e.g., Product Details).
 9. Click "Save" to update the attribute set.
+
+### To display configurable products in the Magento 2 storefront, follow these steps:
+1. Log in to your Magento 2 Admin Panel.
+2. Navigate to Catalog > Products.
+3. Click the "Add Product" dropdown and select "Configurable Product."
+4. Fill in the required product details, such as Name, SKU, Price, Tax Class, etc.
+5. In the "Configurations" section, click on "Create Configurations."
+6. Select the attributes you want to use for the configurable product (e.g., size, color). You can either use existing attributes or create new ones.
+7. Click "Next" and configure the attribute options. For example, if you chose the "Size" attribute, you would specify the available sizes (Small, Medium, Large, etc.).
+8. Click "Next" again, and set the specific details for each simple product associated with the configurable product (e.g., SKU, price, quantity, images).
+9. Click "Next" to review your configurations, and click "Generate Products" to create the associated simple products.
+10. After generating the simple products, fill in any additional information and assign the configurable product to the appropriate categories.
+11. Set the product's visibility to "Catalog, Search" or "Catalog" under the "Search Engine Optimization" section to make it visible in the storefront.
+12. Save your changes by clicking the "Save" button at the top right corner.
+13. Clear the Magento cache by navigating to System > Cache Management and clicking "Flush Magento Cache."
+14. Visit the storefront, and you should see the configurable product in the assigned categories, where customers can select different options and add the product to their cart.
+
+Note: If you don't see the configurable product in the storefront, ensure that it is enabled, in stock, and has a positive quantity. Also, check that the associated simple products are set to "Not Visible Individually."
+
+
+
+
+
+
 
